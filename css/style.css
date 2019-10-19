@@ -1,0 +1,46 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: monospace;
+  /* use this to avoid elastic overscroll on desktop (see below for mobile */
+  overflow: hidden;
+}
+section {
+  /* the scrollable section needs to be positioned absolute, 
+  otherwise the margins are not taken into account when measuing height (CSS...) */
+  position: absolute;
+  width: 100%;
+}
+section div {
+  margin: 100px;
+  width: 200px;
+  height: 400px;
+  position: relative;
+}
+#box1 {
+  z-index: 10;
+  background-color: rgb(200, 0, 0);
+  left: 0%;
+}
+#box2 {
+  z-index: 10;
+  background-color: rgb(0, 200, 0);
+  left: 40%;
+}
+#box3 {
+  z-index: 10;
+  background-color: rgb(0, 0, 200);
+  left: 30%;
+}
+#box4 {
+  z-index: 10;
+  background-color: rgb(200, 200, 0);
+  left: 50%;
+}
+#box5 {
+  z-index: 10;
+  background-color: rgb(200, 0, 200);
+  left: 20%;
+}
